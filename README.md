@@ -17,6 +17,7 @@ Spotto is a chrome extension that lets you add videos from youtube directly into
 ## How to install
 This is the link to the chrome webstore page of my extension!
 https://chrome.google.com/webstore/detail/spotto/keibimcompdilakjckclfephfangnjop?hl=en&authuser=0
+<br>
 Alternatively you can search 'Spotto' in the chrome web store.
 Now you have Spotto loaded! The extension icon looks like this
 <br>
