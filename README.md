@@ -11,6 +11,10 @@
 
 <a name="introduction"></a>
 ## Introduction
+# Why is there only one commit?
+I had another repository where I had worked on this project, however I made the mistake of adding public API keys to that repository and thus decided it would be more simple and cleaner to just create a new repository with those API keys hidden.
+
+# Proper Introduction
 Spotto is a chrome extension that lets you add videos from youtube directly into a Spotify playlist, provided the youtube video exists in Spotify. This was created as a result of my desire to be able to add songs I found on youtube straight into one of my Spotify playlists which has become Spotto!  
 
 <a name="how-to-install"></a>
