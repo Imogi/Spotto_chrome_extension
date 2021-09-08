@@ -22,7 +22,7 @@ https://chrome.google.com/webstore/detail/spotto/keibimcompdilakjckclfephfangnjo
 Alternatively you can search 'Spotto' in the chrome web store.
 Now you have Spotto loaded! The extension icon looks like this
 <br>
-<img src="src/images/SpottoChromeIcon (2).png">
+<img src="Spotto_launch/Spotto/src/images/SpottoChromeIcon (2).png">
 <br><br>
 
 There are still some issues present however the extension is fully functional and will be updated as I finish my university term. 
