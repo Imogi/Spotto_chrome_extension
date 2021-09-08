@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotto main page</title>
+    <link href="popupSignedIn.css" rel="stylesheet" />
+    <!-- CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6446ee94a1.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap'); 
+    </style>
+</head>
+
+<header class="icon" id="icon">
+    <img src="images/Spotto.png" id="spottoIcon">
+</header>
+
+
+<!-- Return to Top -->
+<a href="javascript:;" id="scroll-to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- Popup modal for session timeout -->
+<div id="session-timeout-modal">
+    <img src="images/Spotto.png" id="spottoIcon-timeout">
+    <div id="timeout-description">
+        Session has timed out. Please open spotto again to login again. 
+        This is for security reasons and I am sorry for the inconvenience!
+    </div>
+</div>
+
+
+<body>
+    <div class="nav-container">
+        <nav class="nav-bar">
+            <div class="hamburger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-items" id="pfpli">
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-links" id='sign-out'>SIGN OUT</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-links" id='undo'>UNDO</a>
+                </li>
+            </ul>
+        </nav>
+        <script src="./popupSignedIn.js"></script>
+    </div>
+
+    <div id="Song_title">
+        <div id="song_name">
+            <!-- Default -->
+            ❌ NO SONG FOUND ❌
+        </div>
+        <div id="song_artist">
+            
+        </div>
+    </div>
+    
+    <div id='HowTo'>
+        Select a playlist to add:
+    </div>
+    
+    <div class="playlists" id="playlists">
+        
+    </div>
+    
+    <!-- Popup Modals for creating a new playlist -->
+    <div class="input-modal">
+        <div class="input-modal-content">
+
+            <div class="close-modal">
+                +
+            </div>
+
+            <div id="modal-title">
+                Playlist Details!
+            </div>
+
+            <!-- I feel like this form is useless, could have better utilised it. Serves to inform?-->
+            <form action="">
+
+                <div class="input-box">
+                    <input type="text" id="playlist-name-input" placeholder=" ">
+                    <label for="playlist-name-input">Playlist name</label>
+                </div>
+                <span id="input-box-count">0/100 (Max characters 100)</span>
+                
+                <div class="textarea-container">
+                   <textarea rows="8" cols="80" id="playlist-description-input" placeholder=" " maxlength="300"></textarea>
+                   <label for="playlist-description-input">Playlist description</label>
+                </div>
+                <span id="textarea-count">0/300 (Max characters 300)</span>
+
+                <a href="javascript:;" id="submit-btn">CREATE</a>  
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup modal for Succesfully adding a playlist-->
+    <div class="popup-modal" id="Successful-playlist-creation">
+        <!-- Not sure if I want to include this.
+        <div class="close-success-PC-modal">
+            +
+        </div>
+        -->
+        <div class="tick-container">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="modal-description">
+            Successfully created a playlist.
+        </div>
+    </div>
+
+    <!-- Popup modal for Failing to adding a playlist-->
+    <div class="popup-modal" id="Fail-playlist-creation">
+        <div class="cross-container">
+            <div class="cross">
+                +
+            </div>
+        </div>
+        <div class="modal-description">
+            Failed to create a playlist. Please check the name or description fields have been entered correctly.
+        </div>
+    </div>
+
+
+    <!-- Popup modal for Succesfully adding a song-->
+    <div class="popup-modal" id="Successful-song-add">
+        <div class="tick-container">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="modal-description">
+            Successfully added the song!
+        </div>
+    </div>
+
+    <!-- Popup modal for failing to add a song-->
+    <div class="popup-modal" id="Failed-song-add">
+        <div class="cross-container">
+            <div class="cross">
+                +
+            </div>
+        </div>
+        <div class="modal-description">
+            Song could not be added.
+        </div>
+    </div>
+
+    <!-- Popup modal when user does not have playlist owner authorisation to add a song -->
+    <div class="popup-modal" id="Fail-song-add-OwnerAuth">
+        <div class="cross-container">
+            <div class="cross">
+                +
+            </div>
+        </div>
+        <div class="modal-description">
+            You do not have permission to add to this playlist.
+        </div>
+    </div>
+
+    <!-- Popup modal for succesful undo -->
+    <div class="popup-modal" id="Successful-undo">
+        <div class="tick-container">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="modal-description">
+            Recent add song action has been undone.
+        </div>
+    </div>
+
+     <!-- Popup modal for failed undo -->
+    <div class="popup-modal" id="Failed-undo">
+        <div class="cross-container">
+            <div class="cross">
+                +
+            </div>
+        </div>
+        <div class="modal-description">
+            Nothing to undo.
+        </div>
+    </div>
+
+    <!-- Popup modal for duplicates detected -->
+    <div class="popup-modal" id="duplicates-popup">
+        <div class="cross-container">
+            <div class="cross">
+                +
+            </div>
+        </div>
+        <div class="modal-description">
+            Song already exists in the selected playlist.
+        </div>
+    </div>
+    
+    <script src="./backend.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+body{
+    text-align: center; 
+    background:linear-gradient(120deg, #BE93C5, #4fc7cf);
+    height: auto;
+    width: 300px;
+}
+img{
+    object-fit: contain;
+    height: 100px;
+    width: 170px;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(3, 3, 3);
+    font-size: 24px;
+    background-color: rgb(255, 255, 255);
+    border: 10ch;
+    height: 50px;
+    width: 80%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
