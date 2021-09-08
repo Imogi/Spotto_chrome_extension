@@ -52,10 +52,8 @@ I decided to use the chrome and youtube api in conjunction with each other to ex
 
 <a name="what-i-learnt"></a>
 ## What I learnt
-### For coding the backend.
 This project pushed me to learn a lot of new concepts regarding JS, HTML and CSS! I really enjoyed the various challenges in trying to not only understand documentation, online forum help but to also to utilise these ideas or concepts for my own use. By the end of this project I feel as if my problem solving skills and language proficiency with the aforementioned programming languages have all improved tremendously. 
 
-### For frontend
 In regards to the visual component and various elements of my application I made many improvements through feedback from a lot of my friends or peers through a test use of my chrome extension, this further reiterated the importance of usability testing for frontend components of an application as there were a lot of visual tweaks or flaws that were present.
 
 <a name="license"></a>
