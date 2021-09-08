@@ -1,4 +1,4 @@
-<img src="src/images/spotto_for_md.png">
+<img src="Spotto_launch/Spotto/src/images/spotto_for_md.png">
 
 ## Table of Contents
 - [Introduction](#introduction)
