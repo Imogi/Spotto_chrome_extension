@@ -39,6 +39,7 @@ Now you have Spotto loaded! The extension icon looks like this
 ## Programming languages and REST APIs utilised
 The programming langugages utilised for this project are predominantly HTML, CSS and pure javascript due to the language restrictions placed upon building Chrome extensions. Additionally I interacted and made many web/REST API calls to the Spotify, chrome.runtime, chrome.identity, chrome.browserAction and Youtube API's due to the nature of my chosen method.
 
+Additionally Spotto makes calls to a Nodejs server running on AWS Lambda to fetch API keys and secrets.
 
 <a name="issues-faced"></a>
 ## Issues faced
