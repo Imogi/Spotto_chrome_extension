@@ -12,7 +12,7 @@
 <a name="introduction"></a>
 ## Introduction
 # Why is there only one commit?
-I had another repository where I had worked on this project, however I made the mistake of adding public API keys to that repository and thus decided it would be more simple and cleaner to just create a new repository with those API keys hidden.
+I had another repository where I had worked on this project, however I made the mistake of adding public API keys to that repository and thus decided it would be safer to delete that reporsitory compeletey and move my work into a clean and safe repository that does not contain my secrets and API keys.
 
 # Proper Introduction
 Spotto is a chrome extension that lets you add videos from youtube directly into a Spotify playlist, provided the youtube video exists in Spotify. This was created as a result of my desire to be able to add songs I found on youtube straight into one of my Spotify playlists which has become Spotto!  
@@ -28,8 +28,6 @@ Now you have Spotto loaded! The extension icon looks like this
 <br>
 <img src="Spotto_launch/Spotto/src/images/SpottoChromeIcon (2).png">
 <br><br>
-
-There are still some issues present however the extension is fully functional and will be updated as I finish my university term. 
 
 <a name="features"></a>
 ## Features
@@ -49,6 +47,9 @@ The first issue was enabling the user to login to 'Spotify' in order for my back
 
 Chrome and Youtube API
 I decided to use the chrome and youtube api in conjunction with each other to extract the youtube videos title because I wanted to only use pure javascript as the alternative was to use jquery, PHP, ajax calls or pharsing a extremely large DOM. This took some time as I needed to read alot of documentation on the use of the two new APIs however eventually I again managed to implement these calls to eventually extract the youtube video name which then needed to be normalised as spotify's search query field had its own format, furthermore through testing I realised the search query must be devoid of brackets, punctuation and various other elements all of which I added into the normalise function. 
+
+API keys and Secrets
+As mentioned in my introduction I was forced to remove my previous repository due to exposing my API keys and secrets to the public (a VERY important lesson and something that I will never risk or do again). Due to this mistake I learned the importance of keeping keys and secrets hidden because there is a lot of dangers with exposing those sensitve information. So how did I manage to hide the keys compeletly? Well I integrated a NodeJs backend running on AWS Lambda that will send the required keys when requested by my chrome extension.
 
 <a name="what-i-learnt"></a>
 ## What I learnt
