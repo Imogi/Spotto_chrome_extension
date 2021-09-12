@@ -11,7 +11,7 @@
 
 <a name="introduction"></a>
 ## Introduction
-# Why is there only one commit?
+# Why is there only a few commits?
 I had another repository where I had worked on this project, however I made the mistake of adding public API keys to that repository and thus decided it would be safer to delete that reporsitory compeletey and move my work into a clean and safe repository that does not contain my secrets and API keys.
 
 # Proper Introduction
