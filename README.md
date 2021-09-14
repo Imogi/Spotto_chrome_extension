@@ -38,6 +38,7 @@ Now you have Spotto loaded! The extension icon looks like this
 
 <a name="system-architecture-overview"></a>
 ## System Architecture Overview
+<img src="Spotto_launch/Spotto/src/images/SA.png">
 
 <a name="programming-languages-and-apis-utilised"></a>
 ## Programming languages and REST APIs utilised
