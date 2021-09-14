@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [How to install](#how-to-install)
 - [Features](#features)
+- [System Architecture Overview](#system-architecture-overview)
 - [Programming languages and APIs utilised](#programming-languages-and-apis-utilised)
 - [Issued faced](#issues-faced)
 - [What I learnt](#what-i-learnt)
@@ -34,6 +35,9 @@ Now you have Spotto loaded! The extension icon looks like this
 - Add a song to a playlist
 - Undo the most recently added song
 - Create a new playlist
+
+<a name="system-architecture-overview"></a>
+## System Architecture Overview
 
 <a name="programming-languages-and-apis-utilised"></a>
 ## Programming languages and REST APIs utilised
